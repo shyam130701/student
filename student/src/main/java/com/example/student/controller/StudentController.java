@@ -39,8 +39,7 @@ public class StudentController {
     @PutMapping("/update/{id}")
     public Student updateStudentById(@PathVariable int id,@RequestParam(required = false) String name,
                                      @RequestParam(required = false) String email,
-                                     @RequestParam(required = false) String dept
-    ) throws StudentNotFoundException, EmailAlreadyTakenException
+                                     @RequestParam(required = false) String dept) throws StudentNotFoundException, EmailAlreadyTakenException
     {
         return studentService.updatingById(id,name,email,dept);
     }
