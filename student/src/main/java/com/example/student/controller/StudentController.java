@@ -36,6 +36,7 @@ public class StudentController {
     }
 
 
+
     @PutMapping("/update/{id}")
     public Student updateStudentById(@PathVariable int id,@RequestParam(required = false) String name,
                                      @RequestParam(required = false) String email,
